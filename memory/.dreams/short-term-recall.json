@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-22T10:38:37.161Z",
+  "entries": {
+    "memory:memory/2026-05-21-1730.md:1:40": {
+      "key": "memory:memory/2026-05-21-1730.md:1:40",
+      "path": "memory/2026-05-21-1730.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# Session: 2026-05-21 17:30:16 GMT+8 - **Session Key**: agent:main:feishu:direct:ou_209be8a3163e48e74ba164fb84995baa - **Session ID**: 98d00682-c2a7-47a3-a78d-b4bb6a64fb4e - **Source**: feishu ## Conversation Summary user: Conversation info (untrusted metadata): ```json { \"chat_id\": \"user:ou_209be8a3163e48e74ba164fb84995baa\", \"message_id\": \"om_x100b6fd8eac2b088b2c554e954f2324\", \"sender_id\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"sender\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"timestamp\": \"Thu 2026-05-21 17:02 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"id\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"name\": \"ou_209be8",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-22T08:29:16.431Z",
+      "lastRecalledAt": "2026-05-22T10:38:37.161Z",
+      "queryHashes": [
+        "402682d8cdac",
+        "6ae806c27942",
+        "ee646634f663",
+        "690e949773df"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "2026-05-21-1730.md",
+        "chat-id",
+        "message-id",
+        "sender-id",
+        "ou-209be8",
+        "gmt",
+        "key",
+        "98d00682"
+      ]
+    },
+    "memory:memory/2026-05-21-1730.md:196:236": {
+      "key": "memory:memory/2026-05-21-1730.md:196:236",
+      "path": "memory/2026-05-21-1730.md",
+      "startLine": 196,
+      "endLine": 236,
+      "source": "memory",
+      "snippet": "Sender (untrusted metadata): ```json { \"label\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"id\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"name\": \"ou_209be8a3163e48e74ba164fb84995baa\" } ``` [media attached: media://inbound/59fd117b-0257-4f14-9634-3258a9206d97.jpg (image/jpeg) | media://inbound/59fd117b-0257-4f14-9634-3258a9206d97.jpg] [Image] User text: [Feishu ou_209be8a3163e48e74ba164fb84995baa Thu 2026-05-21 17:19 GMT+8] [message_id: om_x100b6fd8afc53cb4b2cfafbc40ef12f] ou_209be8a3163e48e74ba164fb84995baa: ![image] 你做出来的是这样的，布局不合理，列宽也不对 Description: This is a daily market report for Yinchuan Kaiqi Group dated May 20, 2026, focusing on new media and vertical media performance. Key metric",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-22T08:29:16.431Z",
+      "lastRecalledAt": "2026-05-22T10:38:37.161Z",
+      "queryHashes": [
+        "402682d8cdac",
+        "6ae806c27942",
+        "ee646634f663",
+        "690e949773df"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "2026-05-21-1730.md",
+        "image/jpeg",
+        "message-id",
+        "sender",
+        "untrusted",
+        "metadata",
+        "label",
+        "name"
+      ]
+    },
+    "memory:memory/2026-05-21-1730.md:103:140": {
+      "key": "memory:memory/2026-05-21-1730.md:103:140",
+      "path": "memory/2026-05-21-1730.md",
+      "startLine": 103,
+      "endLine": 140,
+      "source": "memory",
+      "snippet": "老板，您发的图片我这边还是看不到 😢 您可以直接把图片里的表格内容**截图**或者**描述一下**，告诉我： - 是哪个 Sheet（Sheet10？达成看板？） - 哪里需要优化（比如：格式/颜色/公式/结构） 我马上帮您改 🦞 user: Conversation info (untrusted metadata): ```json { \"chat_id\": \"user:ou_209be8a3163e48e74ba164fb84995baa\", \"message_id\": \"om_x100b6fd8fc2b5508b3e432414eb9f7e\", \"sender_id\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"sender\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"timestamp\": \"Thu 2026-05-21 17:06 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"id\": \"ou_209be8a3163e48e74ba164fb84995baa\", \"name\": \"ou_209be8a3163e48e74ba164fb84995baa\" } ``` [media attached: media://inbound/fc5fb232-09d3-4437-bec0-e31fc045",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-22T08:29:16.431Z",
+      "lastRecalledAt": "2026-05-22T10:38:37.161Z",
+      "queryHashes": [
+        "402682d8cdac",
+        "6ae806c27942",
+        "ee646634f663",
+        "690e949773df"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "2026-05-21-1730.md",
+        "格式/颜色/公式/结构",
+        "chat-id",
+        "message-id",
+        "sender-id",
+        "老板",
+        "图片",
+        "这边"
+      ]
+    },
+    "memory:memory/2026-05-21-1730.md:134:171": {
+      "key": "memory:memory/2026-05-21-1730.md:134:171",
+      "path": "memory/2026-05-21-1730.md",
+      "startLine": 134,
+      "endLine": 171,
+      "source": "memory",
+      "snippet": "ou_209be8a3163e48e74ba164fb84995baa: ![image] 把这图里的日报表优化一下，发给我 Description: This daily report for the Yinchuan Kaiqi Group tracks New Media and Vertical Media (垂媒) performance. **Key Insights:** 1. **Targets:** New Media lead acquisition (1959) missed the group target of 2460. 2. **Quality vs. Quantity:** Vertical Media generated more total transactions (27) than New Media (21), despite having nearly 50% fewer leads, indicating higher lead quality. 3. **Branch Leaders:** Yinchuan Kaiqi is the main driver, contributing 26 of the 27 total sales in Vertical Media. 4. **Ef assistant: 看到了！这张图展示的是**达成看板**的完整日报，格式比之前那个精美多了——有色块、KPI圆点、趋势箭头等。 我来按这个样式重新优化一版PDF发给您 🦞 assistant: 优化版PDF已生成 🦞 MEDIA:G",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-22T10:38:37.161Z",
+      "lastRecalledAt": "2026-05-22T10:38:37.161Z",
+      "queryHashes": [
+        "690e949773df"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "2026-05-21-1730.md",
+        "image",
+        "报表",
+        "一下",
+        "description",
+        "report",
+        "yinchuan",
+        "kaiqi"
+      ]
+    }
+  }
+}

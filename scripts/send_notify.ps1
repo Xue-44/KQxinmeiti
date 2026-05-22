@@ -1,0 +1,1 @@
+& "C:\Windows\system32\config\systemprofile\AppData\Roaming\npm\lark-cli.cmd" im +messages-send --user-id ou_dbe72edd88b389ed846c2242adab4250 --text "新媒体虾已重启完成，workspace迁移到 xinmeiti 目录配置生效 🦞"

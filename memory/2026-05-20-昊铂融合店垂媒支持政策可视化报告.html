@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>昊铂融合店垂媒支持政策 - 可视化报告</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #f5f6fa; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 20px; }
+        header h1 { font-size: 24px; margin-bottom: 8px; }
+        header p { opacity: 0.8; font-size: 14px; }
+        .card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .card h2 { font-size: 16px; color: #1a1a2e; border-left: 4px solid #e94560; padding-left: 12px; margin-bottom: 16px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .stat-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; }
+        .stat-box.green { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+        .stat-box.orange { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .stat-box h3 { font-size: 12px; opacity: 0.9; margin-bottom: 8px; }
+        .stat-box .value { font-size: 28px; font-weight: bold; }
+        .stat-box .sub { font-size: 11px; opacity: 0.8; margin-top: 4px; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { background: #1a1a2e; color: white; padding: 10px 8px; text-align: center; }
+        td { padding: 8px; text-align: center; border-bottom: 1px solid #eee; }
+        tr:hover { background: #f8f9fa; }
+        .highlight { color: #e94560; font-weight: 600; }
+        .section-tag { display: inline-block; background: #e94560; color: white; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 8px; }
+        .note { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #856404; margin-top: 16px; }
+        .footer { text-align: center; padding: 20px; color: #999; font-size: 12px; }
+        canvas { max-height: 300px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 昊铂融合店垂媒支持政策</h1>
+            <p>昊铂埃安 BU | 2026年5月-12月 | 内部文件</p>
+        </header>
+
+        <div class="grid">
+            <div class="stat-box">
+                <h3>支持周期</h3>
+                <div class="value">8个月</div>
+                <div class="sub">2026.05 - 2026.12</div>
+            </div>
+            <div class="stat-box green">
+                <h3>厂家补贴比例</h3>
+                <div class="value">52%</div>
+                <div class="sub">双品牌增开部分</div>
+            </div>
+            <div class="stat-box orange">
+                <h3>核销频次</h3>
+                <div class="value">3次/年</div>
+                <div class="sub">按季度核销</div>
+            </div>
+            <div class="stat-box">
+                <h3>支持平台</h3>
+                <div class="value">3个</div>
+                <div class="sub">懂车帝、汽车之家、易车</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>月度/季度核销门槛</h2>
+            <table>
+                <tr><th>核销周期</th><th>季度提车</th><th>月度提车</th><th>备注</th></tr>
+                <tr><td>5-6月</td><td class="highlight">≥4台</td><td class="highlight">≥2台</td><td>未达季度但6月≥2台可按月核销</td></tr>
+                <tr><td>7-9月</td><td class="highlight">≥6台</td><td class="highlight">≥2台</td><td>未达季度但8月≥2台可按月核销</td></tr>
+                <tr><td>10-12月</td><td class="highlight">≥6台</td><td class="highlight">≥2台</td><td>标准要求</td></tr>
+            </table>
+            <div class="note">⚠️ 季度末最后一天前下线的平台，当季度不予核销。销售店退网后即刻下线，厂家不继续补贴。</div>
+        </div>
+
+        <div class="card">
+            <h2>汽车之家集采价格（尊享版）</h2>
+            <table>
+                <tr><th>城市等级</th><th>双品牌增开价(D)</th><th>厂家补贴(52%)</th><th>门店实付(48%)</th></tr>
+                <tr><td>S级</td><td>￥91,166</td><td class="highlight">￥47,406</td><td>￥43,760</td></tr>
+                <tr><td>A级</td><td>￥79,555</td><td class="highlight">￥41,369</td><td>￥38,186</td></tr>
+                <tr><td>B级</td><td>￥55,674</td><td class="highlight">￥28,950</td><td>￥26,724</td></tr>
+                <tr><td>C级</td><td>￥21,525</td><td class="highlight">￥11,193</td><td>￥10,332</td></tr>
+                <tr><td>D级</td><td>￥11,661</td><td class="highlight">￥6,064</td><td>￥5,597</td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>易车集采价格（尊享版）</h2>
+            <table>
+                <tr><th>城市等级</th><th>双品牌增开价(D)</th><th>厂家补贴(52%)</th><th>门店实付(48%)</th></tr>
+                <tr><td>S级</td><td>￥124,213</td><td class="highlight">￥64,591</td><td>￥59,622</td></tr>
+                <tr><td>A级</td><td>￥109,954</td><td class="highlight">￥57,176</td><td>￥52,778</td></tr>
+                <tr><td>B级</td><td>￥75,695</td><td class="highlight">￥39,361</td><td>￥36,334</td></tr>
+                <tr><td>C级</td><td>￥48,161</td><td class="highlight">￥25,044</td><td>￥23,117</td></tr>
+                <tr><td>D级</td><td>￥36,666</td><td class="highlight">￥19,066</td><td>￥17,600</td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>平台补贴对比（S级城市）</h2>
+            <canvas id="chartS"></canvas>
+        </div>
+
+        <div class="card">
+            <h2>各城市等级补贴对比</h2>
+            <canvas id="chartAll"></canvas>
+        </div>
+
+        <div class="card">
+            <h2>双品牌开通说明</h2>
+            <div style="display:flex; gap:16px; flex-wrap:wrap;">
+                <div style="flex:1; min-width:250px; background:#f8f9fa; padding:16px; border-radius:8px;">
+                    <h4 style="color:#1a1a2e; margin-bottom:8px;"><span class="section-tag">汽车之家/易车</span></h4>
+                    <p style="font-size:13px; color:#666;">昊铂开通后，可<strong>免费添加3款</strong>埃安车系</p>
+                    <p style="font-size:13px; color:#666; margin-top:8px;">车型：<strong>i60、N60、RT</strong></p>
+                    <p style="font-size:13px; color:#e94560; margin-top:8px;">全开享52%补贴</p>
+                </div>
+                <div style="flex:1; min-width:250px; background:#f8f9fa; padding:16px; border-radius:8px;">
+                    <h4 style="color:#1a1a2e; margin-bottom:8px;"><span class="section-tag">懂车帝</span></h4>
+                    <p style="font-size:13px; color:#666;">按门店可售卖埃安车系添加</p>
+                    <p style="font-size:13px; color:#666; margin-top:8px;">联系区域新媒体经理报备开通</p>
+                    <p style="font-size:13px; color:#11998e; margin-top:8px;">单品牌按原政策执行</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>区域联系人</h2>
+            <table>
+                <tr><th>区域</th><th>联系人</th><th>电话</th><th>邮箱</th></tr>
+                <tr><td>华南一区</td><td>池泓</td><td>15622728697</td><td>chihong@gac.com.cn</td></tr>
+                <tr><td>华南二区/湖南</td><td>何梓凌</td><td>17278685951</td><td>heziling@gac.com.cn</td></tr>
+                <tr><td>华北区</td><td>林毓杰</td><td>18039054219</td><td>linyujie@gac.com.cn</td></tr>
+                <tr><td>华东/东北/北京</td><td>魏正坚</td><td>13670788545</td><td>weizhengjian@gac.com.cn</td></tr>
+                <tr><td>华中区</td><td>丁灿杰</td><td>13760748459</td><td>dingcanjie@gac.com.cn</td></tr>
+                <tr><td>西区/云贵</td><td>张子正</td><td>19520987631</td><td>zhangzizheng@gac.com.cn</td></tr>
+                <tr><td>山东专区</td><td>刘秋琰</td><td>15814597386</td><td>liuqiuyan@gac.com.cn</td></tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>本报告基于昊铂埃安 BU 内部文件生成 | 仅限内部使用，请勿外传</p>
+            <p style="margin-top:8px;">生成时间：2026年5月20日</p>
+        </div>
+    </div>
+
+    <script>
+        const colors = { primary: '#667eea', secondary: '#764ba2', accent: '#e94560', green: '#11998e' };
+
+        new Chart(document.getElementById('chartS'), {
+            type: 'bar',
+            data: {
+                labels: ['汽车之家', '易车'],
+                datasets: [
+                    { label: '厂家补贴(52%)', data: [47406, 64591], backgroundColor: colors.primary },
+                    { label: '门店实付(48%)', data: [43760, 59622], backgroundColor: colors.green }
+                ]
+            },
+            options: { responsive: true, plugins: { legend: { position: 'top' } }, scales: { y: { beginAtZero: true, ticks: { callback: v => '￥' + v.toLocaleString() } } } }
+        });
+
+        new Chart(document.getElementById('chartAll'), {
+            type: 'line',
+            data: {
+                labels: ['S级', 'A级', 'B级', 'C级', 'D级'],
+                datasets: [
+                    { label: '汽车之家-补贴', data: [47406, 41369, 28950, 11193, 6064], borderColor: colors.primary, backgroundColor: colors.primary + '33', tension: 0.3, fill: true },
+                    { label: '易车-补贴', data: [64591, 57176, 39361, 25044, 19066], borderColor: colors.accent, backgroundColor: colors.accent + '33', tension: 0.3, fill: true }
+                ]
+            },
+            options: { responsive: true, plugins: { legend: { position: 'top' } }, scales: { y: { beginAtZero: true, ticks: { callback: v => '￥' + v.toLocaleString() } } } }
+        });
+    </script>
+</body>
+</html>
